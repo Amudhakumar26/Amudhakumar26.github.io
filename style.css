@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  color: #fff;
+  line-height: 1.6;
+  animation: fadeInBody 1s ease-in;
+}
+
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+nav {
+  background: #2e2a47;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  color: #f7c59f;
+  animation: slideLeft 1s ease forwards;
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  
+}
+
+nav ul li a::after {
+  content: "";
+  height: 2px;
+  background: #f7c59f;
+  width: 0;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #3f2b96, #a8c0ff);
+  color: white;
+  animation: fadeInHero 1s ease-in-out;
+}
+
+@keyframes fadeInHero {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: fadeInText 1.5s ease;
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+section {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 1rem;
+  border-radius: 12px;
+  animation: fadeInSection 1.5s ease;
+}
+
+@keyframes fadeInSection {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #ffde7d;
+  margin-bottom: 0.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #ffcccb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2e2a47;
+  margin-top: 2rem;
+  animation: fadeInFooter 1.5s ease-in;
+}
+
+@keyframes fadeInFooter {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
