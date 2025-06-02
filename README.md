@@ -25,7 +25,7 @@ Visit my live site here:
 This repository contains all the source files for my portfolio website, including:  
 - `index.html` — the main homepage  
 - `style.css` — styling and fonts  
-- Other assets (images, scripts if any)
+
 
 Feel free to explore the code or suggest improvements!
 
